@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(33,33,33,1.0);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Carter One', sans-serif;
+}
+
+.rotatez {
+  transform-origin: bottom left;
+  transform: rotateZ(-10deg);
+}
+
+.st0 {
+  font-family: 'Carter One', sans-serif;
+}
+
+.st1 {
+  fill: #fff;
+  font-size: 2.7rem;
+}
+
+.st2 {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+@media only screen and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
+}
+
+@media only screen and (min-width: 90em) {
+
+}
