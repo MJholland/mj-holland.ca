@@ -13,40 +13,85 @@ h6 {
   font-family: 'Carter One', sans-serif;
 }
 
+@keyframes growshrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  animation: growshrink 1500ms ease-out infinite;
+}
+
+a:visited {
+  text-decoration: line-through;
+}
+
 .rotatez {
   transform-origin: bottom left;
   transform: rotateZ(-10deg);
 }
 
-.st0 {
-  font-family: 'Carter One', sans-serif;
-}
-
-.st1 {
-  fill: #fff;
+.fontsizing {
+  padding-left: 1em;
   font-size: 2.7rem;
 }
 
-.st2 {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-miterlimit: 10;
+.underlining {
+  width: 213.3px;
+  height: 1px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.pushmore {
+  margin-bottom: 4rem;
 }
 
 @media only screen and (min-width: 25em) {
-
+  .fontsizing {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (min-width: 38em) {
+  .fontsizing {
+    font-size: 3rem;
+  }
 
+  #aboutme {
+    padding-left: 2em;
+    padding-right: 18em;
+  }
 }
 
 @media only screen and (min-width: 60em) {
+  .fontsizing {
+    font-size: 3rem;
+  }
 
+  #aboutme {
+    padding-right: 28em;
+  }
 }
 
 @media only screen and (min-width: 90em) {
+  .fontsizing {
+    font-size: 3rem;
+  }
 
+  #aboutme {
+    padding-right: 40em;
+  }
 }
