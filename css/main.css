@@ -13,6 +13,10 @@ h6 {
   font-family: 'Carter One', sans-serif;
 }
 
+.imgwidth {
+  max-width: 100%;
+}
+
 @keyframes growshrink {
   0% {
     transform: scale(1);
@@ -63,11 +67,23 @@ a:visited {
   .fontsizing {
     font-size: 3rem;
   }
+
+  .underlining {
+    width: 235px;
+  }
 }
 
 @media only screen and (min-width: 38em) {
+  .masthead {
+    margin-bottom: 4rem;
+  }
+
   .fontsizing {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .underlining {
+    width: 305px;
   }
 
   #aboutme {
@@ -77,8 +93,16 @@ a:visited {
 }
 
 @media only screen and (min-width: 60em) {
+  .pushmore {
+    margin-bottom: 6rem;
+  }
+
   .fontsizing {
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  .underlining {
+    width: 380px;
   }
 
   #aboutme {
@@ -87,8 +111,21 @@ a:visited {
 }
 
 @media only screen and (min-width: 90em) {
+  .masthead {
+    margin-bottom: 5rem;
+  }
+
+  .pushmore {
+    margin-bottom: 7rem;
+  }
+
   .fontsizing {
-    font-size: 3rem;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .underlining {
+    width: 515px;
   }
 
   #aboutme {
