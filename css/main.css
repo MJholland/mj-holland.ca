@@ -98,7 +98,7 @@ a:visited {
     width: 410px;
   }
 
-  #aboutme {
+  .column-width {
     padding-left: 2em;
     padding-right: 18em;
   }
@@ -121,7 +121,7 @@ a:visited {
     width: 512px;
   }
 
-  #aboutme {
+  .column-width {
     padding-right: 28em;
   }
 }
@@ -148,7 +148,7 @@ a:visited {
     width: 690px;
   }
 
-  #aboutme {
+  .column-width {
     padding-right: 40em;
   }
 }
