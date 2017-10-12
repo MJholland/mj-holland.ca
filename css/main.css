@@ -47,12 +47,20 @@ a:visited {
 }
 
 .fontsizing {
-  padding-left: 1em;
+  padding-left: .5em;
   font-size: 2.7rem;
 }
 
 .underlining {
   width: 213.3px;
+  height: 1px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.underliningxl {
+  width: 290px;
   height: 1px;
   background-color: #fff;
   border: 2px solid #fff;
@@ -86,6 +94,10 @@ a:visited {
     width: 305px;
   }
 
+  .underliningxl {
+    width: 410px;
+  }
+
   #aboutme {
     padding-left: 2em;
     padding-right: 18em;
@@ -103,6 +115,10 @@ a:visited {
 
   .underlining {
     width: 380px;
+  }
+
+  .underliningxl {
+    width: 512px;
   }
 
   #aboutme {
@@ -126,6 +142,10 @@ a:visited {
 
   .underlining {
     width: 515px;
+  }
+
+  .underliningxl {
+    width: 690px;
   }
 
   #aboutme {
