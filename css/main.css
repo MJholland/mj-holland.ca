@@ -59,6 +59,11 @@ a:visited {
   text-decoration: line-through;
 }
 
+.i-32 {
+  max-width: 32px;
+  max-height: 32px;
+}
+
 .rotatez {
   transform-origin: bottom left;
   transform: rotateZ(-10deg);
