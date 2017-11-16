@@ -120,6 +120,14 @@ a:visited {
   margin-bottom: 4rem;
 }
 
+#aboutMe {
+  display: none;
+}
+
+#work {
+  display: none;
+}
+
 #vimeo-icon:hover {
   animation: wiggle 1s ease-in-out 1;
 }
