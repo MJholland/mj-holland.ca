@@ -1,7 +1,7 @@
 var x = document.getElementById("aboutMe");
 var y = document.getElementById("work");
-
-//about me show hide, also closes work section so only one displays
+var z = document.getElementById("contact");
+//about me show hide, also closes other sections so only one displays
 function openCloseAM() {
   "use strict";
   if (!x.style.display || x.style.display === "none") {
@@ -9,10 +9,11 @@ function openCloseAM() {
   } else {
       x.style.display = "none";
   }
-//for the work section to show and hide
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  }
+//for the other sections to show and hide
+if (y.style.display === "block" || z.style.display === "block") {
+  y.style.display = "none";
+  z.style.display = "none";
+}
 }
 
 function openCloseW() {
@@ -23,7 +24,22 @@ function openCloseW() {
       y.style.display = "none";
   }
 
-  if (x.style.display === "block") {
+  if (x.style.display === "block" || z.style.display === "block") {
     x.style.display = "none";
+    z.style.display = "none";
+  }
+}
+
+function openCloseC() {
+  "use strict";
+  if (!z.style.display || z.style.display === "none") {
+    z.style.display = "block";
+  } else {
+    z.style.display = "none";
+  }
+
+  if (x.style.display === "block" || y.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "none";
   }
 }

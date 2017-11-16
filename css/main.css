@@ -128,6 +128,10 @@ a:visited {
   display: none;
 }
 
+#contact {
+  display: none;
+}
+
 #vimeo-icon:hover {
   animation: wiggle 1s ease-in-out 1;
 }
