@@ -106,6 +106,7 @@ a:visited {
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 2px;
+  margin-bottom: 3em;
 }
 
 .underliningxl {
@@ -122,14 +123,17 @@ a:visited {
 
 #aboutMe {
   display: none;
+  margin-top: -2em;
 }
 
 #work {
   display: none;
+  margin-top: -2em;
 }
 
 #contact {
   display: none;
+  margin-top: -2em;
 }
 
 #vimeo-icon:hover {
@@ -175,11 +179,19 @@ a:visited {
     padding-left: 2em;
     padding-right: 18em;
   }
+
+  #work {
+    margin-top: -1em;
+  }
+
+  #contact {
+    margin-top: -3em;
+  }
 }
 
 @media only screen and (min-width: 60em) {
   .pushmore {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   .fontsizing {
