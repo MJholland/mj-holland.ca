@@ -95,6 +95,10 @@ a:visited {
   transform: rotateZ(-10deg);
 }
 
+.cursorchange:hover {
+  cursor: pointer;
+}
+
 .fontsizing {
   padding-left: .5em;
   font-size: 2.7rem;
