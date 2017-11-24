@@ -63,6 +63,28 @@ h6 {
   }
 }
 
+@keyframes linegrow {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 213.3px;
+  }
+}
+
+@keyframes revealheader {
+  to {
+    opacity: 0;
+    transform: translateY(2em);
+  }
+
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 a {
   color: #fff;
 }
@@ -93,6 +115,15 @@ a:visited {
   -webkit-transform: rotateZ(-10deg);
   transform-origin: bottom left;
   transform: rotateZ(-10deg);
+  -ms-transition: transform 250ms linear;
+  -webkit-transition: transform 250ms linear;
+  transition: transform 250ms linear;
+}
+
+.rotatez:hover {
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
 }
 
 .cursorchange:hover {
@@ -102,6 +133,7 @@ a:visited {
 .fontsizing {
   padding-left: .5em;
   font-size: 2.7rem;
+  animation: revealheader 1s linear;
 }
 
 .underlining {
@@ -111,6 +143,7 @@ a:visited {
   border: 2px solid #fff;
   border-radius: 2px;
   margin-bottom: 3em;
+  animation: linegrow 250ms linear;
 }
 
 .underliningxl {
