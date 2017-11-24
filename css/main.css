@@ -65,23 +65,47 @@ h6 {
 
 @keyframes linegrow {
   from {
-    width: 0px;
+    transform: scaleX(0);
   }
 
   to {
-    width: 213.3px;
+    transform: scaleX(1);
   }
 }
 
 @keyframes revealheader {
-  to {
+  0% {
     opacity: 0;
-    transform: translateY(2em);
+    transform: translateY(1em);
   }
 
-  from {
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: .4;
+  }
+
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes contentgrow {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  80% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }
 
@@ -131,9 +155,24 @@ a:visited {
 }
 
 .fontsizing {
+  opacity: 0;
   padding-left: .5em;
   font-size: 2.7rem;
-  animation: revealheader 1s linear;
+  animation: revealheader 1s linear forwards;
+}
+
+.fontsizing-1 {
+  opacity: 0;
+  padding-left: .5em;
+  font-size: 2.7rem;
+  animation: revealheader 1s linear .25s forwards;
+}
+
+.fontsizing-2 {
+  opacity: 0;
+  padding-left: .5em;
+  font-size: 2.7rem;
+  animation: revealheader 1s linear .5s forwards;
 }
 
 .underlining {
@@ -143,7 +182,33 @@ a:visited {
   border: 2px solid #fff;
   border-radius: 2px;
   margin-bottom: 3em;
-  animation: linegrow 250ms linear;
+  transform-origin: top left;
+  transform: scaleX(0);
+  animation: linegrow 450ms linear forwards;
+}
+
+.underlining-1 {
+  width: 213.3px;
+  height: 1px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin-bottom: 3em;
+  transform-origin: top left;
+  transform: scaleX(0);
+  animation: linegrow 450ms linear .25s forwards;
+}
+
+.underlining-2 {
+  width: 213.3px;
+  height: 1px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin-bottom: 3em;
+  transform-origin: top left;
+  transform: scaleX(0);
+  animation: linegrow 450ms linear .5s forwards;
 }
 
 .underliningxl {
@@ -156,6 +221,11 @@ a:visited {
 
 .pushmore {
   margin-bottom: 4rem;
+}
+
+.content-grow {
+  transform-origin: center top;
+  animation: contentgrow 250ms ease-in;
 }
 
 #aboutMe {
@@ -186,7 +256,23 @@ a:visited {
     font-size: 3rem;
   }
 
+  .fontsizing-1 {
+    font-size: 3rem;
+  }
+
+  .fontsizing-2 {
+    font-size: 3rem;
+  }
+
   .underlining {
+    width: 235px;
+  }
+
+  .underlining-1 {
+    width: 235px;
+  }
+
+  .underlining-2 {
     width: 235px;
   }
 }
@@ -204,9 +290,27 @@ a:visited {
     font-size: 3.5rem;
   }
 
+  .fontsizing-1 {
+    font-size: 3.5rem;
+  }
+
+  .fontsizing-2 {
+    font-size: 3.5rem;
+  }
+
   .underlining {
     width: 305px;
   }
+
+  .underlining-1 {
+    width: 305px;
+  }
+
+
+  .underlining-2 {
+    width: 305px;
+  }
+
 
   .underliningxl {
     width: 410px;
@@ -235,7 +339,23 @@ a:visited {
     font-size: 4rem;
   }
 
+  .fontsizing-1 {
+    font-size: 4rem;
+  }
+
+  .fontsizing-2 {
+    font-size: 4rem;
+  }
+
   .underlining {
+    width: 380px;
+  }
+
+  .underlining-1 {
+    width: 380px;
+  }
+
+  .underlining-2 {
     width: 380px;
   }
 
@@ -262,7 +382,25 @@ a:visited {
     margin-bottom: 1.5rem;
   }
 
+  .fontsizing-1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .fontsizing-2 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .underlining {
+    width: 515px;
+  }
+
+  .underlining-1 {
+    width: 515px;
+  }
+
+  .underlining-2 {
     width: 515px;
   }
 
