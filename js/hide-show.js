@@ -49,8 +49,9 @@ function rotationAM(div) {
   "use strict";
   if (!x.style.display || x.style.display === "block") {
     div.className = "levelheader";
-  }
-  else {
+  } else if (y.style.display === "block" || z.style.display === "block") {
+      div.className = "rotateheader";
+  } else {
     div.className = "rotateheader";
   }
 }
@@ -59,8 +60,9 @@ function rotationW(div) {
   "use strict";
   if (!y.style.display || y.style.display === "block") {
     div.className = "levelheader";
-  }
-  else {
+  } else if (x.style.display === "block" || z.style.display === "block") {
+      div.className = "rotateheader";
+  } else {
     div.className = "rotateheader";
   }
 }
@@ -69,8 +71,9 @@ function rotationC(div) {
   "use strict";
   if (!z.style.display || z.style.display === "block") {
     div.className = "levelheader";
-  }
-  else {
+  } else if (x.style.display === "block" || y.style.display === "block") {
+    div.className = "rotateheader";
+  } else {
     div.className = "rotateheader";
   }
 }
