@@ -1,6 +1,7 @@
 var x = document.getElementById("aboutMe");
 var y = document.getElementById("work");
 var z = document.getElementById("contact");
+var className = div.getAttribute("class");
 //about me show hide, also closes other sections so only one displays
 function openCloseAM() {
   "use strict";
@@ -41,5 +42,35 @@ function openCloseC() {
   if (x.style.display === "block" || y.style.display === "block") {
     x.style.display = "none";
     y.style.display = "none";
+  }
+}
+
+function rotationAM(div) {
+  "use strict";
+  if (!x.style.display || x.style.display === "block") {
+    div.className = "levelheader";
+  }
+  else {
+    div.className = "rotateheader";
+  }
+}
+
+function rotationW(div) {
+  "use strict";
+  if (!y.style.display || y.style.display === "block") {
+    div.className = "levelheader";
+  }
+  else {
+    div.className = "rotateheader";
+  }
+}
+
+function rotationC(div) {
+  "use strict";
+  if (!z.style.display || z.style.display === "block") {
+    div.className = "levelheader";
+  }
+  else {
+    div.className = "rotateheader";
   }
 }
