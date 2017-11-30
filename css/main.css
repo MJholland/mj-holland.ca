@@ -144,19 +144,19 @@ a:visited {
   animation: wiggle 1s ease-in-out 1;
 }
 
-.rotatez {
+.rotateheader {
   -ms-transform-origin: bottom left;
   -webkit-transform-origin: bottom left;
   transform-origin: bottom left;
   -ms-transform: rotateZ(-10deg);
   -webkit-transform: rotateZ(-10deg);
   transform: rotateZ(-10deg);
-  -ms-transition: transform 250ms linear;
+  /*-ms-transition: transform 250ms linear;
   -webkit-transition: transform 250ms linear;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear;*/
 }
 
-.rotatez:hover {
+.levelheader {
   -ms-transform: rotateZ(0deg);
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);

@@ -3,9 +3,11 @@ layout: default
 ---
   <main class="push-2">
 
-    <div class="push rotatez cursorchange" onclick="openCloseAM()">
-      <h2 class="fontsizing push-1-2">About</h2>
-      <div class="underlining">
+    <div onclick="rotation(this)" class="rotateheader">
+      <div id="aboutheader" class="push cursorchange" onclick="openCloseAM()">
+        <h2 class="fontsizing push-1-2">About</h2>
+        <div class="underlining">
+        </div>
       </div>
     </div>
 
@@ -25,9 +27,11 @@ layout: default
       </p>
     </section>
 
-    <div class="push rotatez cursorchange" onclick="openCloseW()">
-      <h2 class="fontsizing-1 push-1-2">Work</h2>
-      <div class="underlining-1">
+    <div onclick="rotation(this)" class="rotateheader">
+      <div id="workheader" class="push cursorchange" onclick="openCloseW()">
+        <h2 class="fontsizing-1 push-1-2">Work</h2>
+        <div class="underlining-1">
+        </div>
       </div>
     </div>
 
@@ -113,9 +117,11 @@ layout: default
       </div>
     </div>
 
-    <div class="rotatez pushmore cursorchange" onclick="openCloseC()">
-      <h2 class="fontsizing-2 push-1-2">Contact</h2>
-      <div class="underlining-2 contact-underline">
+    <div onclick="rotation(this)" class="rotateheader">
+      <div id="contactheader" class="pushmore cursorchange" onclick="openCloseC()">
+        <h2 class="fontsizing-2 push-1-2">Contact</h2>
+        <div class="underlining-2 contact-underline">
+        </div>
       </div>
     </div>
 
@@ -162,3 +168,4 @@ layout: default
     </p>
   </footer>
 <script type="text/javascript" src="../js/hide-show.js"></script>
+<script type="text/javascript" src="../js/header-rotate.js"></script>
