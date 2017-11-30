@@ -121,6 +121,26 @@ h6 {
   }
 }
 
+@keyframes contentshrink {
+  0% {
+    opacity: 1;
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  20% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 0;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+
 a {
   color: #fff;
 }
@@ -244,6 +264,11 @@ a:visited {
 .content-grow {
   transform-origin: center top;
   animation: contentgrow 250ms ease-in;
+}
+
+.content-shrink {
+  transform-origin: center top;
+  animation: contentshrink 150ms ease-out;
 }
 
 #aboutMe {

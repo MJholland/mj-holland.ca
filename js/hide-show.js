@@ -3,30 +3,33 @@ var x = document.getElementById("aboutMe");
 var y = document.getElementById("work");
 var z = document.getElementById("contact");
 //variables for rotating header
-var a = document.getElementById("aboutheader").classList;
-var b = document.getElementById("workheader").classList;
-var c = document.getElementById("contactheader").classList;
-
+var r1 = document.getElementById("aboutheader").classList;
+var r2 = document.getElementById("workheader").classList;
+var r3 = document.getElementById("contactheader").classList;
+//variables for shrinking content
+var s1 = document.getElementById("aboueMe").classList;
+var s2 = document.getElementById("work").classList;
+var s3 = document.getElementById("contact").classList;
 //about me show hide & rotation. also closes & rotates other sections so only one displays
 function openCloseAM() {
   "use strict";
   if (!x.style.display || x.style.display === "none") {
       x.style.display = "block";
-      a.remove("rotateheader");
-      a.add("levelheader");
+      r1.remove("rotateheader");
+      r1.add("levelheader");
   } else {
       x.style.display = "none";
-      a.remove("levelheader");
-      a.add("rotateheader");
+      r1.remove("levelheader");
+      r1.add("rotateheader");
   }
 //for the other sections to show/hide & rotate
   if (y.style.display === "block" || z.style.display === "block") {
     y.style.display = "none";
     z.style.display = "none";
-    b.remove("levelheader");
-    b.add("rotateheader");
-    c.remove("levelheader");
-    c.add("rotateheader");
+    r2.remove("levelheader");
+    r2.add("rotateheader");
+    r3.remove("levelheader");
+    r3.add("rotateheader");
   }
 }
 
@@ -35,21 +38,21 @@ function openCloseW() {
   "use strict";
   if (!y.style.display || y.style.display === "none") {
       y.style.display = "block";
-      b.remove("rotateheader");
-      b.add("levelheader");
+      r2.remove("rotateheader");
+      r2.add("levelheader");
   } else {
       y.style.display = "none";
-      b.remove("levelheader");
-      b.add("rotateheader");
+      r2.remove("levelheader");
+      r2.add("rotateheader");
   }
 //for the other sections to show/hide & rotate
   if (x.style.display === "block" || z.style.display === "block") {
     x.style.display = "none";
     z.style.display = "none";
-    a.remove("levelheader");
-    a.add("rotateheader");
-    c.remove("levelheader");
-    c.add("rotateheader");
+    r1.remove("levelheader");
+    r1.add("rotateheader");
+    r3.remove("levelheader");
+    r3.add("rotateheader");
   }
 }
 
@@ -58,20 +61,20 @@ function openCloseC() {
   "use strict";
   if (!z.style.display || z.style.display === "none") {
     z.style.display = "block";
-    c.remove("rotateheader");
-    c.add("levelheader");
+    r3.remove("rotateheader");
+    r3.add("levelheader");
   } else {
     z.style.display = "none";
-    c.remove("levelheader");
-    c.add("rotateheader");
+    r3.remove("levelheader");
+    r3.add("rotateheader");
   }
   //for the other sections to show/hide & rotate
   if (x.style.display === "block" || y.style.display === "block") {
     x.style.display = "none";
     y.style.display = "none";
-    a.remove("levelheader");
-    a.add("rotateheader");
-    b.remove("levelheader");
-    b.add("rotateheader");
+    r1.remove("levelheader");
+    r1.add("rotateheader");
+    r2.remove("levelheader");
+    r2.add("rotateheader");
   }
 }
