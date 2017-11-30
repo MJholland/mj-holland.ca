@@ -146,10 +146,10 @@ a:visited {
 
 .rotatez {
   -ms-transform-origin: bottom left;
-  -ms-transform: rotateZ(-10deg);
   -webkit-transform-origin: bottom left;
-  -webkit-transform: rotateZ(-10deg);
   transform-origin: bottom left;
+  -ms-transform: rotateZ(-10deg);
+  -webkit-transform: rotateZ(-10deg);
   transform: rotateZ(-10deg);
   -ms-transition: transform 250ms linear;
   -webkit-transition: transform 250ms linear;
