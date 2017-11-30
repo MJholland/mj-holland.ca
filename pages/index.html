@@ -3,11 +3,9 @@ layout: default
 ---
   <main class="push-2">
 
-    <div onclick="rotationAM(this)" class="rotateheader">
-      <div id="aboutheader" class="push cursorchange" onclick="openCloseAM()">
-        <h2 class="fontsizing push-1-2">About</h2>
-        <div class="underlining">
-        </div>
+    <div id="aboutheader" class="push cursorchange rotateheader" onclick="openCloseAM()" onclick="toggleRotationAM()">
+      <h2 class="fontsizing push-1-2">About</h2>
+      <div class="underlining">
       </div>
     </div>
 
@@ -27,11 +25,9 @@ layout: default
       </p>
     </section>
 
-    <div class="rotateheader" onclick="rotationC(this)">
-      <div id="workheader" class="push cursorchange" onclick="openCloseW()">
-        <h2 class="fontsizing-1 push-1-2">Work</h2>
-        <div class="underlining-1">
-        </div>
+    <div id="workheader" class="push cursorchange rotateheader" onclick="openCloseW()">
+      <h2 class="fontsizing-1 push-1-2">Work</h2>
+      <div class="underlining-1">
       </div>
     </div>
 
@@ -117,11 +113,10 @@ layout: default
       </div>
     </div>
 
-    <div onclick="rotationC(this)" class="rotateheader">
-      <div id="contactheader" class="pushmore cursorchange" onclick="openCloseC()">
-        <h2 class="fontsizing-2 push-1-2">Contact</h2>
-        <div class="underlining-2 contact-underline">
-        </div>
+
+    <div id="contactheader" class="pushmore cursorchange rotateheader" onclick="openCloseC()">
+      <h2 class="fontsizing-2 push-1-2">Contact</h2>
+      <div class="underlining-2 contact-underline">
       </div>
     </div>
 

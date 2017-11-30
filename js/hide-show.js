@@ -1,7 +1,9 @@
 var x = document.getElementById("aboutMe");
 var y = document.getElementById("work");
 var z = document.getElementById("contact");
-var className = div.getAttribute("class");
+var a = document.getElementById("aboutheader").classList;
+var b = document.getElementById("workheader").classList;
+var c = document.getElementById("contactheader").classList;
 //about me show hide, also closes other sections so only one displays
 function openCloseAM() {
   "use strict";
@@ -14,7 +16,18 @@ function openCloseAM() {
 if (y.style.display === "block" || z.style.display === "block") {
   y.style.display = "none";
   z.style.display = "none";
-}
+  }
+
+  if (a.contains("rotateheader")) {
+    a.remove("rotateheader");
+  } else {
+    a.add("rotateheader");
+  }
+  if (a.contains("levelheader")) {
+    a.remove("levelheader");
+  } else {
+    a.add("levelheader");
+  }
 }
 
 function openCloseW() {
@@ -28,6 +41,17 @@ function openCloseW() {
   if (x.style.display === "block" || z.style.display === "block") {
     x.style.display = "none";
     z.style.display = "none";
+  }
+
+  if (b.contains("rotateheader")) {
+    b.remove("rotateheader");
+  } else {
+    b.add("rotateheader");
+  }
+  if (b.contains("levelheader")) {
+    b.remove("levelheader");
+  } else {
+    b.add("levelheader");
   }
 }
 
@@ -43,37 +67,15 @@ function openCloseC() {
     x.style.display = "none";
     y.style.display = "none";
   }
-}
 
-function rotationAM(div) {
-  "use strict";
-  if (!x.style.display || x.style.display === "block") {
-    div.className = "levelheader";
-  } else if (y.style.display === "block" || z.style.display === "block") {
-      div.className = "rotateheader";
+  if (c.contains("rotateheader")) {
+    c.remove("rotateheader");
   } else {
-    div.className = "rotateheader";
+    c.add("rotateheader");
   }
-}
-
-function rotationW(div) {
-  "use strict";
-  if (!y.style.display || y.style.display === "block") {
-    div.className = "levelheader";
-  } else if (x.style.display === "block" || z.style.display === "block") {
-      div.className = "rotateheader";
+  if (c.contains("levelheader")) {
+    c.remove("levelheader");
   } else {
-    div.className = "rotateheader";
-  }
-}
-
-function rotationC(div) {
-  "use strict";
-  if (!z.style.display || z.style.display === "block") {
-    div.className = "levelheader";
-  } else if (x.style.display === "block" || y.style.display === "block") {
-    div.className = "rotateheader";
-  } else {
-    div.className = "rotateheader";
+    c.add("levelheader");
   }
 }
