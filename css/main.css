@@ -65,10 +65,14 @@ h6 {
 
 @keyframes linegrow {
   from {
+    -ms-transform: scaleX(0);
+    -webkit-transform: scaleX(0);
     transform: scaleX(0);
   }
 
   to {
+    -ms-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
 }
@@ -76,6 +80,8 @@ h6 {
 @keyframes revealheader {
   0% {
     opacity: 0;
+    -ms-transform: translateY(1em);
+    -webkit-transform: translateY(1em);
     transform: translateY(1em);
   }
 
@@ -89,6 +95,8 @@ h6 {
 
   100% {
     opacity: 1;
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
@@ -96,6 +104,8 @@ h6 {
 @keyframes contentgrow {
   0% {
     opacity: 0;
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
     transform: scaleY(0);
   }
 
@@ -105,6 +115,8 @@ h6 {
 
   100% {
     opacity: 1;
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
 }
