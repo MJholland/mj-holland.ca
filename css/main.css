@@ -151,15 +151,21 @@ a:visited {
   -ms-transform: rotateZ(-10deg);
   -webkit-transform: rotateZ(-10deg);
   transform: rotateZ(-10deg);
-  /*-ms-transition: transform 250ms linear;
-  -webkit-transition: transform 250ms linear;
-  transition: transform 250ms linear;*/
+  -ms-transition: transform 150ms linear;
+  -webkit-transition: transform 150ms linear;
+  transition: transform 150ms linear;
 }
 
 .levelheader {
+  -ms-transform-origin: bottom left;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
   -ms-transform: rotateZ(0deg);
   -webkit-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
+  -ms-transition: transform 250ms linear;
+  -webkit-transition: transform 250ms linear;
+  transition: transform 250ms linear;
 }
 
 .cursorchange:hover {
