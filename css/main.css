@@ -215,6 +215,9 @@ a:visited {
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 2px;
+  transform-origin: top left;
+  transform: scaleX(0);
+  animation: linegrow 450ms linear .5s forwards;
 }
 
 .pushmore {
