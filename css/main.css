@@ -249,6 +249,14 @@ a:visited {
   animation: wiggle 1s ease-in-out 1;
 }
 
+#behance-logo:hover {
+  animation: wiggle 1s ease-in-out 1;
+}
+
+#linkedin-logo:hover {
+  animation: wiggle 1s ease-in-out 1;
+}
+
 @media only screen and (min-width: 25em) {
   .fontsizing {
     font-size: 3rem;
