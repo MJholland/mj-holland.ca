@@ -10,7 +10,7 @@ title: Homepage
       </div>
     </div>
 
-    <section id="aboutMe" class="content-grow push-2 column-width gutter-1-2">
+    <section itemscope itemtype="http://schema.org/Person" id="aboutMe" class="content-grow push-2 column-width gutter-1-2">
       <p class="mega">
         Why I design is a difficult question. Once I realized that design is everywhere, that it rules the world in a sense, I knew I wanted to be apart of that. I’m also a jack of all trades type, so if something grabs my interest I want to know how to do it/make it. The combination of these two things are the reason I am a designer.
       </p>
@@ -18,11 +18,11 @@ title: Homepage
       <p class="push-0 mega">
         I design with the following quote in mind:
       </p>
-      <q class="mega">Be different, do different things,
+      <q itemprop="citation" class="mega">Be different, do different things,
       Don't do it like he did, cause he ain't what you is.</q>
 
       <p class="push-0">
-        <cite class="mega">— Kendrick Lamar</cite>
+        <cite itemprop="name" class="mega">— Kendrick Lamar</cite>
       </p>
     </section>
 
@@ -44,9 +44,9 @@ title: Homepage
                 <img src="http://via.placeholder.com/200x200" alt="place holder image">
               </picture>
             </div>
-            <div class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
-              <a rel="author" class="push-2" href="case-study.html">Case study</a>
-              <a rel="icon" class="icon-link" href="#">
+            <div itemscope itemtype="http://schema.org/Thing" class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
+              <a rel="author" itemprop="url" class="push-2" href="case-study.html">Case study</a>
+              <a rel="icon" itemprop="url" class="icon-link" href="#">
                 <i class="icon"></i>
               </a>
             </div>
@@ -63,9 +63,9 @@ title: Homepage
                 <img src="http://via.placeholder.com/200x200" alt="place holder image">
               </picture>
             </div>
-            <div class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
-              <a rel="author" class="push-2" href="case-study.html">Case study</a>
-              <a rel="icon" class="icon-link" href="#">
+            <div itemscope itemtype="http://schema.org/Thing" class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
+              <a rel="author" itemprop="url" class="push-2" href="case-study.html">Case study</a>
+              <a rel="icon" itemprop="url" class="icon-link" href="#">
                 <i class="icon"></i>
               </a>
             </div>
@@ -84,9 +84,9 @@ title: Homepage
                 <img src="http://via.placeholder.com/200x200" alt="place holder image">
               </picture>
             </div>
-            <div class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
-              <a rel="author" class="push-2" href="case-study.html">Case study</a>
-              <a rel="icon" class="icon-link" href="#">
+            <div itemscope itemtype="http://schema.org/Thing" class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
+              <a rel="author" itemprop="url" class="push-2" href="case-study.html">Case study</a>
+              <a rel="icon" itemprop="url" class="icon-link" href="#">
                 <i class="icon"></i>
               </a>
             </div>
@@ -103,9 +103,9 @@ title: Homepage
                 <img src="http://via.placeholder.com/200x200" alt="place holder image">
               </picture>
             </div>
-            <div class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
-              <a rel="author" class="push-2" href="case-study.html">Case study</a>
-              <a rel="icon" class="icon-link" href="#">
+            <div itemscope itemtype="http://schema.org/Thing" class="text-center unit-content-center-vertical unit [ xs-1-3 m-1-2 l-1-3 ]">
+              <a rel="author" itemprop="url" class="push-2" href="case-study.html">Case study</a>
+              <a rel="icon" itemprop="url" class="icon-link" href="#">
                 <i class="icon"></i>
               </a>
             </div>
@@ -122,11 +122,11 @@ title: Homepage
     </div>
 
     <section id="contact" class="content-grow">
-      <div class="text-center max-length grid">
+      <div itemscope itemtype="http://schema.org/Organization" class="text-center max-length grid">
 
         <p class="mega push-1-2 gutter-1-2 unit [ xs-1 m-1 ]">You can reach me at the following email address. Don't be shy.</p>
-        <p class="mega push unit [ xs-1 m-1 ]">contact@mj-holland.ca</p>
-        <a rel="external" class="push-1-2 unit [ xs-1-2 m-1-4 ]" href="https://vimeo.com/user56639384">
+        <p itemprop="email" class="mega push unit [ xs-1 m-1 ]">contact@mj-holland.ca</p>
+        <a rel="external" itemprop="url" class="push-1-2 unit [ xs-1-2 m-1-4 ]" href="https://vimeo.com/user56639384">
           <svg id="vimeo-icon" viewBox="0 0 120 120" width="64" height="64">
             <style>
            .st0{fill:#fff}
@@ -135,7 +135,7 @@ title: Homepage
           </svg>
         </a>
 
-        <a rel="external" class="push-1-2 unit [ xs-1-2 m-1-4 ]" href="https://www.instagram.com/8008135_._/">
+        <a rel="external" itemprop="url" class="push-1-2 unit [ xs-1-2 m-1-4 ]" href="https://www.instagram.com/8008135_._/">
           <svg id="instagram-icon" viewBox="0 0 512 512" width="64" height="64">
             <style>
               .st0{fill:#fff}
@@ -148,7 +148,7 @@ title: Homepage
           </svg>
         </a>
 
-        <a rel="external" class="unit [ xs-1-2 m-1-4 ]" href="https://www.behance.net/MJ_Holland">
+        <a rel="external" itemprop="url" class="unit [ xs-1-2 m-1-4 ]" href="https://www.behance.net/MJ_Holland">
           <svg id="behance-logo" viewBox="0 0 90 90" width="64" height="64">
             <style>
               .st3{fill:#fff}.st4{fill:#000 }
@@ -158,7 +158,7 @@ title: Homepage
           </svg>
         </a>
 
-        <a rel="external" class="unit [ xs-1-2 m-1-4 ]" href="https://www.linkedin.com/in/mj-holland/">
+        <a rel="external" itemprop="url" class="unit [ xs-1-2 m-1-4 ]" href="https://www.linkedin.com/in/mj-holland/">
           <svg id="linkedin-logo" viewBox="0 0 155.2 144" width="64">
             <style>
            .st0{fill:#fff}
@@ -176,8 +176,8 @@ title: Homepage
 
   </main>
 
-  <footer class="push-0 text-center">
-    <p class="push">
+  <footer itemscope itemtype="http://schema.org/Person" class="push-0 text-center">
+    <p itemprop="name" class="push">
       © MJ Holland
     </p>
   </footer>
