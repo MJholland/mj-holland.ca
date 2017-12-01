@@ -1,0 +1,15 @@
+# humanstxt.org
+
+# TEAM
+
+Designer & Developer: MJ Holland <contact@mj-holland.ca>
+Site: http://mj-holland.ca
+GitHub: https://github.com/MJholland
+Instagram: @8008135_._
+Location: Ottawa, Canada
+
+---
+
+# THANKS
+
+- All my teachers (especially Thomas for helping build this site)

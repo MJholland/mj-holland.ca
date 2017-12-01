@@ -1,0 +1,6 @@
+# www.robotstxt.org
+
+Sitemap: http://mj-holland.ca/sitemap.xml
+
+User-Agent: *
+Disallow:
