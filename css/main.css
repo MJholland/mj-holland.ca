@@ -13,12 +13,13 @@ h6 {
   font-family: 'Carter One', sans-serif;
 }
 
-h1 {
-  text-decoration: none;
-}
-
 .imgwidth {
   max-width: 100%;
+}
+
+.my-logo {
+  width: 200px;
+  transform-origin: center;
 }
 
 @keyframes growshrink {
@@ -109,7 +110,7 @@ a {
   color: #fff;
 }
 
-a:hover {
+.link-animation:hover {
   animation: growshrink 1500ms ease-out infinite;
 }
 
