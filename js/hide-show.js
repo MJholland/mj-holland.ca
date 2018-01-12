@@ -6,6 +6,13 @@ var r3 = document.getElementById("contactheader").classList;
 var s1 = document.getElementById("aboutMe").classList;
 var s2 = document.getElementById("work").classList;
 var s3 = document.getElementById("contact").classList;
+//incase javascript fails
+s1.remove("content-grow-open");
+r1.remove("levelheader");
+s2.remove("content-grow-open");
+s3.remove("content-grow-open");
+r2.remove("levelheader");
+r3.remove("levelheader");
 //about me show hide & rotation. also closes & rotates other sections so only one displays
 function openCloseAM() {
   "use strict";
