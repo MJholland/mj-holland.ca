@@ -188,8 +188,18 @@ a:visited {
   text-decoration: line-through;
 }
 
+.masthead {
+  width: 100vw;
+  height: 320px;
+}
+
 .my-logo {
-  width: 320px;
+  background-image: url("../images/logo-noloop.gif");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 320px;
+  width: 100vw;
+  height: 320px;
 }
 
 .icon {
@@ -410,9 +420,6 @@ a:visited {
 }
 
 @media only screen and (min-width: 38em) {
-  .masthead {
-    margin-bottom: 4rem;
-  }
 
   .case-study-masthead {
     margin-bottom: 5.5rem;
@@ -501,10 +508,6 @@ a:visited {
 }
 
 @media only screen and (min-width: 90em) {
-  .masthead {
-    margin-bottom: 5rem;
-  }
-
   .pushmore {
     margin-bottom: 7rem;
   }
